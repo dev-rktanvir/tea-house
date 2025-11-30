@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea House</title>
+    <title>The Tea House</title>
     <!-- Fav Icon -->
     <link rel="shortcut icon" href="images/cup.png" type="image/x-icon">
     <!-- Font Awsome Icon -->
@@ -25,105 +25,141 @@
 </head>
 
 <body class="font-manrope">
+    <!-- Navbar -->
+    <nav class="container mx-auto px-3 md:px-4 lg:px-10 py-6 flex items-center justify-between">
+
+        <!-- Brand Name -->
+        <h1 class="text-2xl md:text-3xl font-extrabold text-primary cursor-pointer">
+            Tea House
+        </h1>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden lg:flex items-center gap-10 font-medium text-secondary">
+            <li class="cursor-pointer hover:text-primary duration-200">Home</li>
+            <li class="cursor-pointer hover:text-primary duration-200">Menu</li>
+            <li class="cursor-pointer hover:text-primary duration-200">About</li>
+            <li class="cursor-pointer hover:text-primary duration-200">Contact</li>
+        </ul>
+
+        <!-- Desktop Button -->
+        <button
+            class="hidden lg:block rounded-xl px-6 py-3 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold">
+            Order Now
+        </button>
+
+        <!-- Mobile / Tablet Hamburger Icon -->
+        <button id="menu-toggle" class="lg:hidden text-3xl text-primary">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+
     <!-- Banner section -->
     <header
-        class=" container mx-auto px-3 md:px-4 lg:px-10 py-16 flex flex-col-reverse justify-between lg:flex-row items-center text-center lg:text-left">
+        class="container mx-auto px-3 md:px-4 lg:px-10 py-16 flex flex-col-reverse justify-between lg:flex-row items-center text-center lg:text-left">
+
         <!-- content part -->
         <div class="space-y-8">
-            <h1 class="font-extrabold text-primary text-5xl md:text-7xl">It's good<br> tea time at The<br> Tea House
+            <h1 class="font-extrabold text-primary text-5xl md:text-7xl">
+                It's always a good<br> time to enjoy tea<br> at The Tea House
             </h1>
+
             <p class="font-medium text-secondary max-w-3/4 text-lg mx-auto lg:mx-0">
-                Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
+                Experience freshly brewed blends crafted to elevate your mood and soothe your senses.
             </p>
+
             <button
-                class="rounded-xl px-5 py-4 bg-linear-to-r from-orange-500 to-red-500 font-bold text-white text-xl cursor-pointer">Explore
-                More <i class="fas fa-arrow-right-long -rotate-45"></i>
+                class="rounded-xl px-5 py-4 bg-linear-to-r from-orange-500 to-red-500 font-bold text-white text-xl cursor-pointer">
+                Explore Menu <i class="fas fa-arrow-right-long -rotate-45"></i>
             </button>
         </div>
+
         <!-- Image part -->
         <div>
-            <!-- image -->
             <div class="relative">
                 <img class="w-full" src="images/banner.png" alt="">
             </div>
-            <!-- Card -->
-            <div class=" absolute -mt-30 ml-20 rounded-xl bg-white shadow-md flex items-center gap-3 px-7 py-5">
+
+            <div class="absolute -mt-30 ml-20 rounded-xl bg-white shadow-md flex items-center gap-3 px-7 py-5">
                 <i class="fa-solid fa-star text-3xl text-yellow-400"></i>
                 <div>
                     <p class="font-extrabold text-3xl text-primary">5.00</p>
-                    <p class="font-semibold text-base text-secondary">Trust Pilot Ratings</p>
+                    <p class="font-semibold text-base text-secondary">Customer Favorite Ratings</p>
                 </div>
             </div>
         </div>
     </header>
+
     <main class="container mx-auto px-3 md:px-4 lg:px-10">
+
         <!-- Feature Section part 01 -->
         <section class="text-center my-10 lg:my-20">
-            <h2 class="font-extrabold text-3xl md:text-5xl text-primary">Our Featured Products</h2>
+            <h2 class="font-extrabold text-3xl md:text-5xl text-primary">Our Featured Teas</h2>
+
             <p class="md:max-w-4/6 mx-auto mt-5 font-medium text-base text-secondary">
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                alteration in some form, by injected humour, or randomised words which don't look even slightly
-                believable.
+                Discover our most-loved tea selections, curated for those who appreciate great taste and modern tea
+                culture.
             </p>
-            <!-- Cards container -->
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-12">
-                <!-- Card -->
+
+                <!-- Lemon Tea -->
                 <div
                     class="flex flex-col items-center gap-8 justify-center p-8 rounded-xl bg-linear-to-b from-[#F4F4F4] to-[#F4F4F4]/20">
+                    <img src="images/tea-1.png" alt="">
                     <div>
-                        <img src="images/tea-1.png" alt="">
-                    </div>
-                    <div>
-                        <h3 class="font-extrabold text-2xl text-primary">Lemon Tea</h3>
-                        <p class="font-semibold text-base text-secondary mt-3">Creamer could be replaced by fresh milk
+                        <h3 class="font-extrabold text-2xl text-primary">Lemon Blossom Tea</h3>
+                        <p class="font-semibold text-base text-secondary mt-3">
+                            A refreshing citrus infusion made with hand-picked lemons and delicate tea leaves.
                         </p>
                     </div>
                 </div>
-                <!-- Card -->
+
+                <!-- Milk Tea -->
                 <div
                     class="flex flex-col items-center gap-8 justify-center p-8 rounded-xl bg-linear-to-b from-[#F4F4F4] to-[#F4F4F4]/20">
+                    <img src="images/tea-2.png" alt="">
                     <div>
-                        <img src="images/tea-2.png" alt="">
-                    </div>
-                    <div>
-                        <h3 class="font-extrabold text-2xl text-primary">Milk Tea</h3>
-                        <p class="font-semibold text-base text-secondary mt-3">Creamer could be replaced by fresh milk
+                        <h3 class="font-extrabold text-2xl text-primary">Signature Milk Tea</h3>
+                        <p class="font-semibold text-base text-secondary mt-3">
+                            Smooth, creamy, and perfectly balanced—our bestseller for a reason.
                         </p>
                     </div>
                 </div>
-                <!-- Card -->
+
+                <!-- Black Tea -->
                 <div
                     class="flex flex-col items-center gap-8 justify-center p-8 rounded-xl bg-linear-to-b from-[#F4F4F4] to-[#F4F4F4]/20">
+                    <img src="images/tea-3.png" alt="">
                     <div>
-                        <img src="images/tea-3.png" alt="">
-                    </div>
-                    <div>
-                        <h3 class="font-extrabold text-2xl text-primary">Black Tea</h3>
-                        <p class="font-semibold text-base text-secondary mt-3">Creamer could be replaced by fresh milk
+                        <h3 class="font-extrabold text-2xl text-primary">Classic Black Tea</h3>
+                        <p class="font-semibold text-base text-secondary mt-3">
+                            Bold, aromatic, and naturally energizing. A timeless favorite.
                         </p>
                     </div>
                 </div>
-                <!-- Card -->
+
+                <!-- Green Tea -->
                 <div
                     class="flex flex-col items-center gap-8 justify-center p-8 rounded-xl bg-linear-to-b from-[#F4F4F4] to-[#F4F4F4]/20">
+                    <img src="images/tea-4.png" alt="">
                     <div>
-                        <img src="images/tea-4.png" alt="">
-                    </div>
-                    <div>
-                        <h3 class="font-extrabold text-2xl text-primary">Green Tea</h3>
-                        <p class="font-semibold text-base text-secondary mt-3">Creamer could be replaced by fresh milk
+                        <h3 class="font-extrabold text-2xl text-primary">Pure Green Tea</h3>
+                        <p class="font-semibold text-base text-secondary mt-3">
+                            Light, fresh, and rich in antioxidants—made for mindful sipping.
                         </p>
                     </div>
                 </div>
+
             </div>
         </section>
 
-        <!-- Feature section part 02 -->
+        <!-- Feature Section part 02 -->
         <section class="my-10 lg:my-20 grid grid-cols-1 lg:grid-cols-2 gap-12">
+
             <!-- Image side -->
             <div class="grid grid-cols-2 grid-rows-[150px_200px] gap-4">
-                <div class="bg-linear-to-r from-red-100 to-orange-50 rounded-xl h-36">
-                </div>
+                <div class="bg-linear-to-r from-red-100 to-orange-50 rounded-xl h-36"></div>
+
                 <div class="bg-[#577639]/10 rounded-xl row-span-2 flex justify-center items-center">
                     <img src="images/fresh-1.png" alt="">
                 </div>
@@ -131,31 +167,37 @@
                 <div class="bg-[#577639]/10 rounded-xl row-span-2 flex justify-center items-center">
                     <img src="images/fresh-2.png" alt="">
                 </div>
-                <div class="bg-linear-to-r from-[#D9D9D9] to-white rounded-xl h-36">
-                </div>
+
+                <div class="bg-linear-to-r from-[#D9D9D9] to-white rounded-xl h-36"></div>
             </div>
+
             <!-- content side -->
             <div class="space-y-8">
-                <h2 class="font-extrabold text-3xl md:text-5xl text-primary text-center lg:text-left">Great Tea,
-                    Freshly<br> Presented</h2>
+                <h2 class="font-extrabold text-3xl md:text-5xl text-primary text-center lg:text-left">
+                    Great Tea, Freshly<br> Presented
+                </h2>
+
                 <p class="font-medium text-base text-secondary lg:max-w-5/6">
-                    The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It
-                    represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply
-                    appreciated by its custoers because of good words of mouth and unique customized service orginated
-                    from Taiwan.
+                    At The Tea House, we believe tea is more than a drink—it's an experience. Our blends are crafted
+                    from premium ingredients sourced from sustainable farms and brewed with care to bring out every
+                    subtle note and aroma.
                 </p>
+
                 <div class="lg:max-w-4/6 space-y-8">
                     <div>
-                        <h3 class="font-extrabold text-xl text-primary text-center lg:text-left mb-3">Unique Taste</h3>
+                        <h3 class="font-extrabold text-xl text-primary mb-3 text-center lg:text-left">Unique Taste</h3>
                         <p class="font-medium text-base text-secondary">
-                            A Unique and different style from other teapots gives a luxurious and minimalist impression
+                            Our modern tea creations introduce refreshing flavors and creative blends you won’t find
+                            anywhere else.
                         </p>
                     </div>
+
                     <div>
-                        <h3 class="font-extrabold text-xl text-primary text-center lg:text-left mb-3">Premium Quality
+                        <h3 class="font-extrabold text-xl text-primary mb-3 text-center lg:text-left">Premium Quality
                         </h3>
                         <p class="font-medium text-base text-secondary">
-                            Premium Quality that makes tea more elegant and more durable when you use it.
+                            We prioritize fresh ingredients, sustainable practices, and expert brewing to ensure every
+                            cup feels special.
                         </p>
                     </div>
                 </div>
@@ -165,156 +207,172 @@
         <!-- Feature section part 03 -->
         <section
             class="flex gap-20 lg:gap-5 flex-col lg:flex-row items-center my-10 lg:my-20 rounded-xl p-8 lg:p-16 bg-gradient-to-r from-orange-500 to-red-500">
+
             <!-- content part -->
             <div class="lg:flex-1">
                 <h2 class="font-extrabold text-5xl text-white">Meet Our Super<br> Clients</h2>
+
                 <p class="font-medium text-base text-white my-6 lg:w-3/4">
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration in some form, by injected humour, or randomised words which don't look even slightly
-                    believable.
+                    We love our community—and they love our tea! Here’s what our customers are saying about their
+                    experience at The Tea House.
                 </p>
+
                 <button class="rounded-lg px-7 py-4 font-bold text-xl text-orange-700 bg-white cursor-pointer">Show
                     All</button>
             </div>
+
             <!-- Review part -->
             <div class="lg:flex-1 space-y-10 relative z-0">
-                <!-- card - 1 -->
+
+                <!-- main card -->
                 <div class="absolute top-28 z-10">
                     <div class="rounded-lg bg-white p-8 md:p-12 relative space-y-5 w-5/6 lg:w-3/4">
                         <img class="absolute -top-5 -left-5" src="images/client.png" alt="">
                         <p class="text">
-                            We are providing the best and suitable home insurance services for the people who are
-                            interested
-                            to treatment
+                            The Tea House has completely changed how I enjoy tea. The flavors are rich, the atmosphere
+                            is relaxing, and the service is always warm.
                         </p>
+
                         <div>
-                            <h5 class="font-bold text-base text-primary">Ilham Yuda</h5>
-                            <p class="text">Businessman</p>
+                            <h5 class="font-bold text-base text-primary">Aisha Rahman</h5>
+                            <p class="text">Entrepreneur</p>
                         </div>
                     </div>
                 </div>
-                <!-- card - 2 -->
+
+                <!-- behind cards -->
                 <div
                     class="rounded-lg bg-white p-8 md:p-12 relative left-20 lg:left-40 space-y-5 opacity-40 w-5/6 lg:w-3/4">
                     <img class="absolute -top-5 -left-5" src="images/client.png" alt="">
                     <p class="text">
-                        We are providing the best and suitable home insurance services for the people who are interested
-                        to treatment
+                        Their tea collection is amazing! Every visit feels refreshing and special.
                     </p>
                     <div>
-                        <h5 class="font-bold text-base text-primary">Ilham Yuda</h5>
-                        <p class="text">Businessman</p>
+                        <h5 class="font-bold text-base text-primary">Michael Chen</h5>
+                        <p class="text">Designer</p>
                     </div>
                 </div>
-                <!-- card - 3 -->
+
                 <div
                     class="rounded-lg bg-white p-8 md:p-12 relative left-20 lg:left-40 space-y-5 opacity-40 w-5/6 lg:w-3/4">
                     <img class="absolute -top-5 -left-5" src="images/client.png" alt="">
                     <p class="text">
-                        We are providing the best and suitable home insurance services for the people who are interested
-                        to treatment
+                        Best tea café in town. Quality ingredients and cozy vibes—highly recommended!
                     </p>
                     <div>
-                        <h5 class="font-bold text-base text-primary">Ilham Yuda</h5>
-                        <p class="text">Businessman</p>
+                        <h5 class="font-bold text-base text-primary">Sara Malik</h5>
+                        <p class="text">Student</p>
                     </div>
                 </div>
+
             </div>
         </section>
 
         <!-- News & Events section -->
         <section class="text-center my-10 lg:my-20">
             <h2 class="font-extrabold text-3xl md:text-5xl text-primary">News & Events</h2>
+
             <p class="md:max-w-4/6 mx-auto mt-5 font-medium text-base text-secondary">
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                alteration in some form, by injected humour, or randomised words which don't look even slightly
-                believable.
+                Stay updated with our latest tea releases, events, and exclusive offers happening at The Tea House.
             </p>
-            <!-- Cards container -->
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-12">
-                <!-- card 01 -->
+
+                <!-- card 1 -->
                 <div class="rounded-lg border border-[#D2D2D2] p-5 text-left">
-                    <div>
-                        <img class="w-full" src="images/news-1.png" alt="">
-                    </div>
+                    <img class="w-full" src="images/news-1.png" alt="">
                     <div class="space-y-3 mt-5 mb-3">
                         <p class="text">Feb 05, 2027</p>
-                        <h3 class="font-extrabold text-xl text-primary w-5/6 lg:w-4/6">Collecting 8 points for discount
+                        <h3 class="font-extrabold text-xl text-primary w-5/6 lg:w-4/6">
+                            Earn Rewards with Every Sip
                         </h3>
                         <p class="text">
-                            There are many variations of passages of Lorem Ipsum available.
+                            Join our loyalty program and collect points to enjoy exciting discounts and free beverages.
                         </p>
                     </div>
                     <p class="font-bold text-base text-primary cursor-pointer">Learn More</p>
                 </div>
-                <!-- card 02 -->
+
+                <!-- card 2 -->
                 <div class="rounded-lg border border-[#D2D2D2] p-5 text-left">
-                    <div>
-                        <img class="w-full" src="images/news-2.png" alt="">
-                    </div>
+                    <img class="w-full" src="images/news-2.png" alt="">
                     <div class="space-y-3 mt-5 mb-3">
                         <p class="text">Feb 05, 2027</p>
-                        <h3 class="font-extrabold text-xl text-primary w-4/6">Collecting 8 points for discount</h3>
+                        <h3 class="font-extrabold text-xl text-primary w-5/6">
+                            New Seasonal Blends Arrived
+                        </h3>
                         <p class="text">
-                            There are many variations of passages of Lorem Ipsum available.
+                            Explore our limited-edition winter teas crafted with warm, comforting flavors.
                         </p>
                     </div>
                     <p class="font-bold text-base text-primary cursor-pointer">Learn More</p>
                 </div>
-                <!-- card 03 -->
+
+                <!-- card 3 -->
                 <div class="rounded-lg border border-[#D2D2D2] p-5 text-left">
-                    <div>
-                        <img class="w-full" src="images/news-3.png" alt="">
-                    </div>
+                    <img class="w-full" src="images/news-3.png" alt="">
                     <div class="space-y-3 mt-5 mb-3">
                         <p class="text">Feb 05, 2027</p>
-                        <h3 class="font-extrabold text-xl text-primary w-4/6">Collecting 8 points for discount</h3>
+                        <h3 class="font-extrabold text-xl text-primary w-5/6">
+                            Tea Tasting Workshop
+                        </h3>
                         <p class="text">
-                            There are many variations of passages of Lorem Ipsum available.
+                            Learn the art of tea tasting and discover how to identify notes, aromas, and textures.
                         </p>
                     </div>
                     <p class="font-bold text-base text-primary cursor-pointer">Learn More</p>
                 </div>
+
             </div>
         </section>
+
     </main>
-    <footer class=" bg-gradient-to-r from-orange-100 to-red-100">
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-orange-100 to-red-100">
         <div class="container mx-auto px-3 md:px-4 lg:px-10 py-10 lg:py-20">
+
             <!-- top part -->
             <div class="flex gap-6 flex-col lg:flex-row justify-between">
                 <div>
                     <img class="mx-auto" src="images/cup.png" alt="">
                 </div>
+
                 <div class="flex gap-5 items-center justify-center">
-                    <p class="font-medium text-xl text-secondary">Ready to get strated?</p>
+                    <p class="font-medium text-xl text-secondary">Ready to enjoy your next cup?</p>
                     <button
-                        class="rounded-xl px-8 py-3 bg-linear-to-r from-orange-500 to-red-500 font-bold text-white text-xl cursor-pointer">Get
-                        Started</button>
+                        class="rounded-xl px-8 py-3 bg-linear-to-r from-orange-500 to-red-500 font-bold text-white text-xl cursor-pointer">
+                        Get Started
+                    </button>
                 </div>
             </div>
+
             <!-- Bottom Part -->
             <div class="my-12 grid justify-center gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                <!-- Item 1 -->
+
+                <!-- Quick links -->
                 <div>
                     <h4 class="font-semibold text-xl text-primary mb-6">Quick Links</h4>
                     <ul class="text-base text-secondary space-y-5 cursor-pointer">
                         <li>Home</li>
                         <li>About Us</li>
-                        <li>Insurance</li>
+                        <li>Menu</li>
                         <li>Privacy Policy</li>
                     </ul>
                 </div>
-                <!-- Item 2 -->
+
+                <!-- Our Service -->
                 <div>
                     <h4 class="font-semibold text-xl text-primary mb-6">Our Service</h4>
                     <ul class="text-base text-secondary space-y-5 cursor-pointer">
-                        <li>Life Insurance</li>
-                        <li>Car Insurance</li>
-                        <li>Health Insurance</li>
-                        <li>House Insurance</li>
+                        <li>Dine-In</li>
+                        <li>Takeaway</li>
+                        <li>Online Orders</li>
+                        <li>Catering</li>
                     </ul>
                 </div>
-                <!-- Item 3 -->
+
+                <!-- Help -->
                 <div>
                     <h4 class="font-semibold text-xl text-primary mb-6">Help</h4>
                     <ul class="text-base text-secondary space-y-5 cursor-pointer">
@@ -322,7 +380,8 @@
                         <li>Contact Us</li>
                     </ul>
                 </div>
-                <!-- Item 4 -->
+
+                <!-- newsletter -->
                 <div class="flex flex-col md:flex-row lg:flex-col gap-5">
                     <h4 class="font-semibold text-xl text-primary mb-6">Subscribe to our<br> newsletter</h4>
 
@@ -341,9 +400,11 @@
                     </div>
                 </div>
             </div>
-            <p class="font-medium text-base text-[#494949] text-center">© 2027 UIDesign.to - All rights reserved.</p>
+
+            <p class="font-medium text-base text-[#494949] text-center">© 2027 The Tea House - All rights reserved.</p>
         </div>
     </footer>
+
 </body>
 
 </html>
