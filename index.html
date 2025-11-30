@@ -24,9 +24,10 @@
     </style>
 </head>
 
-<body class="font-manrope container mx-auto px-3 md:px-4 lg:px-10">
+<body class="font-manrope">
     <!-- Banner section -->
-    <header class="py-16 flex flex-col-reverse justify-between lg:flex-row items-center text-center lg:text-left">
+    <header
+        class=" container mx-auto px-3 md:px-4 lg:px-10 py-16 flex flex-col-reverse justify-between lg:flex-row items-center text-center lg:text-left">
         <!-- content part -->
         <div class="space-y-8">
             <h1 class="font-extrabold text-primary text-5xl md:text-7xl">It's good<br> tea time at The<br> Tea House
@@ -55,7 +56,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="container mx-auto px-3 md:px-4 lg:px-10">
         <!-- Feature Section part 01 -->
         <section class="text-center my-10 lg:my-20">
             <h2 class="font-extrabold text-3xl md:text-5xl text-primary">Our Featured Products</h2>
@@ -178,7 +179,7 @@
             <!-- Review part -->
             <div class="lg:flex-1 space-y-10 relative z-0">
                 <!-- card - 1 -->
-                <div class="absolute top-36 z-10">
+                <div class="absolute top-28 z-10">
                     <div class="rounded-lg bg-white p-8 md:p-12 relative space-y-5 w-5/6 lg:w-3/4">
                         <img class="absolute -top-5 -left-5" src="images/client.png" alt="">
                         <p class="text">
@@ -238,7 +239,8 @@
                     </div>
                     <div class="space-y-3 mt-5 mb-3">
                         <p class="text">Feb 05, 2027</p>
-                        <h3 class="font-extrabold text-xl text-primary w-5/6 lg:w-4/6">Collecting 8 points for discount</h3>
+                        <h3 class="font-extrabold text-xl text-primary w-5/6 lg:w-4/6">Collecting 8 points for discount
+                        </h3>
                         <p class="text">
                             There are many variations of passages of Lorem Ipsum available.
                         </p>
@@ -276,8 +278,71 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class=" bg-gradient-to-r from-orange-100 to-red-100">
+        <div class="container mx-auto px-3 md:px-4 lg:px-10 py-10 lg:py-20">
+            <!-- top part -->
+            <div class="flex gap-6 flex-col lg:flex-row justify-between">
+                <div>
+                    <img class="mx-auto" src="images/cup.png" alt="">
+                </div>
+                <div class="flex gap-5 items-center justify-center">
+                    <p class="font-medium text-xl text-secondary">Ready to get strated?</p>
+                    <button
+                        class="rounded-xl px-8 py-3 bg-linear-to-r from-orange-500 to-red-500 font-bold text-white text-xl cursor-pointer">Get
+                        Started</button>
+                </div>
+            </div>
+            <!-- Bottom Part -->
+            <div class="my-12 grid justify-center gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                <!-- Item 1 -->
+                <div>
+                    <h4 class="font-semibold text-xl text-primary mb-6">Quick Links</h4>
+                    <ul class="text-base text-secondary space-y-5 cursor-pointer">
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Insurance</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <!-- Item 2 -->
+                <div>
+                    <h4 class="font-semibold text-xl text-primary mb-6">Our Service</h4>
+                    <ul class="text-base text-secondary space-y-5 cursor-pointer">
+                        <li>Life Insurance</li>
+                        <li>Car Insurance</li>
+                        <li>Health Insurance</li>
+                        <li>House Insurance</li>
+                    </ul>
+                </div>
+                <!-- Item 3 -->
+                <div>
+                    <h4 class="font-semibold text-xl text-primary mb-6">Help</h4>
+                    <ul class="text-base text-secondary space-y-5 cursor-pointer">
+                        <li>FAQs</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <!-- Item 4 -->
+                <div class="flex flex-col md:flex-row lg:flex-col gap-5">
+                    <h4 class="font-semibold text-xl text-primary mb-6">Subscribe to our<br> newsletter</h4>
 
+                    <div class="flex items-center flex-col md:flex-row gap-5 lg:border-b border-[#494949] lg:w-1/2">
+                        <input class="outline-orange-500 p-2" type="text" placeholder="Email Address">
+                        <button type="submit"
+                            class="bg-gradient-to-r from-orange-500 to-red-500 w-5 h-5 p-5 flex justify-center items-center rounded-full cursor-pointer">
+                            <i class="fa-solid fa-angle-right text-white"></i>
+                        </button>
+                    </div>
+
+                    <div class="flex items-center gap-6 text-2xl text-[#494949] my-12">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <p class="font-medium text-base text-[#494949] text-center">© 2027 UIDesign.to - All rights reserved.</p>
+        </div>
     </footer>
 </body>
 
