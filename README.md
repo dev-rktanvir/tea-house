@@ -1,8 +1,8 @@
 <p align="center">
-  <strong> Live Link: https://your-tea-house-live-link.com/ </strong>
+  <strong> Live Link: https://dev-rktanvir.github.io/tea-house/ </strong>
 </p>
 
-![Hero Section](./images/banner.png)
+![Hero Section](https://github.com/dev-rktanvir/tea-house/blob/main/screenshorts/tea-house.png)
 
 # 🍵 The Tea House – Modern Tea Café Website
 A beautifully crafted, fully responsive **tea shop website** built using **HTML**, **CSS**, and **Tailwind CSS**.  
@@ -94,13 +94,14 @@ Tailwind utilities make edits fast and scalable.
 ## 📸 Screenshots  
 **Click any image to view in full size**
 
-| Hero | Featured Teas | Fresh Section |
-|------|---------------|---------------|
-| <img src="./screenshots/tea-hero.png" width="250"/> | <img src="./screenshots/tea-featured.png" width="250"/> | <img src="./screenshots/tea-fresh.png" width="250"/> |
+| Hero | Featured Teas | Promotion Section |
+|------|---------------|-----------------|
+| <img src="https://github.com/dev-rktanvir/tea-house/blob/main/screenshorts/tea-house-hero.png" width="250"/> | <img src="https://github.com/dev-rktanvir/tea-house/blob/main/screenshorts/tea-house-featured.png" width="250"/> | <img src="https://github.com/dev-rktanvir/tea-house/blob/main/screenshorts/tea-house-promotion.png" width="250"/> |
 
 | Testimonials | News & Events | Footer |
 |--------------|---------------|--------|
-| <img src="./screenshots/tea-testimonials.png" width="250"/> | <img src="./screenshots/tea-news.png" width="250"/> | <img src="./screenshots/tea-footer.png" width="250"/> |
+| <img src="https://github.com/dev-rktanvir/tea-house/blob/main/screenshorts/tea-house-testimonials.png" width="250"/> | <img src="https://github.com/dev-rktanvir/tea-house/blob/main/screenshorts/tea-house-news%20and%20events.png" width="250"/> | <img src="https://github.com/dev-rktanvir/tea-house/blob/main/screenshorts/tea-house-footer.png" width="250"/> |
+
 
 ---
 
